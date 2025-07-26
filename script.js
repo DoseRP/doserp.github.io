@@ -117,7 +117,7 @@ function showPage(pageId) {
     
     // Update page title
     const pageTitle = getPageTitle(pageId);
-    document.title = `${pageTitle} - FiveM RP Server`;
+    document.title = `${pageTitle} - DoseRP`;
 }
 
 // Helper function to get page titles
@@ -129,7 +129,7 @@ function getPageTitle(pageId) {
         'applications': 'Podania',
         'status': 'Status podania'
     };
-    return titles[pageId] || 'FiveM RP Server';
+    return titles[pageId] || 'DoseRP';
 }
 
 // Add keyboard navigation
