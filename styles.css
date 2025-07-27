@@ -871,4 +871,91 @@ body {
     .status-methods {
         grid-template-columns: 1fr;
     }
+    .login-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            position: relative;
+        }
+        
+        .login-btn {
+            background-color: #4a5568;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .login-btn:hover {
+            background-color: #2d3748;
+        }
+        
+        .login-modal {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            width: 300px;
+        }
+        
+        .login-modal.active {
+            display: block;
+        }
+        
+        .login-modal input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .login-modal button {
+            width: 100%;
+            padding: 8px;
+            background-color: #4299e1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .login-modal button:hover {
+            background-color: #3182ce;
+        }
+        
+        .logged-in {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logout-btn {
+            background-color: #e53e3e;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .logout-btn:hover {
+            background-color: #c53030;
+        }
+        
+        .admin-only {
+            display: none;
+        }
+        
+        .logged-in-admin .admin-only {
+            display: block;
+        }
 }
